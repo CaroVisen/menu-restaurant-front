@@ -23,6 +23,7 @@ const CardItem = ({ plato }: props) => {
           <img
             style={{ height: "90%", padding: "5%", borderRadius: "25px" }}
             src={plato.img}
+            alt=""
           />
         </div>
         <div style={{ width: "60%", height: "100%", padding: " 0% 5%" }}>
