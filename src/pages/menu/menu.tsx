@@ -8,10 +8,12 @@ const Menu = () => {
   const [platos, setPlatos] = useState<Plato[]>([]);
 
   const getPlatos = () => {
-    axios.get("http://localhost:5000/api/platos/getPlatos").then((res) => {
-      var platos = res.data as Plato[];
-      setPlatos(platos);
-    });
+    axios
+      .get("https://menu-restaurant-b.onrender.com/api/platos/getPlatos")
+      .then((res) => {
+        var platos = res.data as Plato[];
+        setPlatos(platos);
+      });
   };
   useEffect(() => {
     getPlatos();
