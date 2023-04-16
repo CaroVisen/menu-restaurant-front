@@ -8,12 +8,16 @@ const Menu = () => {
   const [platos, setPlatos] = useState<Plato[]>([]);
 
   const getPlatos = () => {
-    axios
-      .get("https://menu-restaurant-b.onrender.com/api/platos/getPlatos")
-      .then((res) => {
-        var platos = res.data as Plato[];
-        setPlatos(platos);
-      });
+    try {
+      axios
+        .get("https://menu-restaurant-b.onrender.com/api/platos/getPlatos")
+        .then((res) => {
+          var platos = res.data as Plato[];
+          setPlatos(platos);
+        });
+    } catch (error) {
+      console.log(error);
+    }
   };
   useEffect(() => {
     getPlatos();
