@@ -10,7 +10,7 @@ const CardItem = ({ plato }: props) => {
     <>
       <div
         style={{
-          height: "150px",
+          height: "5%",
           width: "320px",
           borderRadius: "25px",
           border: " solid 2px #0099ff",
@@ -19,9 +19,9 @@ const CardItem = ({ plato }: props) => {
           marginBottom: "5%",
         }}
       >
-        <div style={{ width: "40%", height: "100%" }}>
+        <div style={{ height: "100%", margin: "auto" }}>
           <img
-            style={{ height: "90%", padding: "5%", borderRadius: "25px" }}
+            style={{ height: "150px", padding: "5%", borderRadius: "25px" }}
             src={plato.img}
             alt=""
           />
