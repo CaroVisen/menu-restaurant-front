@@ -15,8 +15,7 @@ const CardItem = ({ plato }: props) => {
           borderRadius: "25px",
           border: " solid 2px #0099ff",
           display: "flex",
-          margin: "auto",
-          marginBottom: "5%",
+          margin: "2.5% auto",
         }}
       >
         <div style={{ height: "100%", margin: "auto" }}>

@@ -41,6 +41,7 @@ const Menu = () => {
             display: "flex",
             justifyContent: "space-between",
             flexWrap: "wrap",
+            alignItems: "center",
           }}
         >
           {platos.map((plato: Plato, index) => (
