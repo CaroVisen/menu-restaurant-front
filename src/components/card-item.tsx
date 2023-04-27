@@ -10,12 +10,13 @@ const CardItem = ({ plato }: props) => {
     <>
       <div
         style={{
-          height: "5%",
+          minHeight: "5%",
           width: "320px",
           borderRadius: "25px",
           border: " solid 2px #0099ff",
           display: "flex",
           margin: "2.5% auto",
+          padding: "auto",
         }}
       >
         <div style={{ height: "100%", margin: "auto" }}>
